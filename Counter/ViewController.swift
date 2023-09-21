@@ -8,8 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    var counter = 0 {
+   private var counter = 0 {
         didSet {
             updateCounterLabel()
         }
@@ -23,7 +22,6 @@ class ViewController: UIViewController {
         
         counterButton.tintColor = .green
     }
-
     @IBAction func buttonTap(_ sender: Any) {
         counter += 1
     }
